@@ -1,0 +1,16 @@
+{{ visibility }}
+
+{{#if static}}
+    static
+{{/if}}
+
+{{#if abstract}}
+    abstract
+{{/if}}
+
+function {{ operationName }} (
+    {{#each parameters}}
+        {{> Parameter }}
+        {{#if @last}}{{else}} , {{/if}}
+    {{/each}}    
+)

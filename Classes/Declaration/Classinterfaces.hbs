@@ -1,0 +1,5 @@
+implements 
+{{#each interfaces}}
+    {{ this }}
+    {{#if @last}}{{else}} , {{/if}}
+{{/each}}
