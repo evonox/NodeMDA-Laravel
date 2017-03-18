@@ -1,0 +1,4 @@
+{
+    $result =  $this->{{ name }}_impl({{#each parameters}}{{#unless @first}}, {{/unless}}${{name}}{{/each}});
+    return $result;
+}

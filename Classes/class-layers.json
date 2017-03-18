@@ -1,0 +1,39 @@
+{
+    "layers": [
+        {
+            "name": "Declaration Layer",
+            "directory": "Declaration",
+            "rootTemplate": "File",
+            "className": "{0}Declaration",
+            "outputFileName": "{0}Declaration.php"
+        },
+        {
+            "name": "OCL Constraints Layer",
+            "directory": "OCLMixin",
+            "rootTemplate": "File",
+            "className": "{0}ConstraintsTrait",
+            "outputFileName": "{0}ConstraintsTrait.php"
+        },
+        {
+            "name": "Genereated operation behaviour Layer",
+            "directory": "BehaviourMixin",
+            "rootTemplate": "File",
+            "className": "{0}BehaviourTrait",
+            "outputFileName": "{0}BehaviourTrait.php"
+        },
+        {
+            "name": "Layer for manual custom code changes",
+            "directory": "OperationMixin",
+            "rootTemplate": "File",
+            "className": "{0}OperationsTrait",
+            "outputFileName": "{0}OperationsTrait.php"
+        },
+        {
+            "name": "The final class-code merging layer",
+            "directory": "MixinMerge",
+            "rootTemplate": "File",
+            "className": "{0}",
+            "outputFileName": "{0}.php"
+        }
+    ]
+}

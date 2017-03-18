@@ -1,0 +1,11 @@
+{{ visibility }}
+
+{{#if static}}
+    static
+{{/if}}
+
+{{#if abstract}}
+    abstract
+{{/if}}
+
+function {{ name }}_behaviour ({{#each parameters}}{{> Parameter}}{{#if @last}}{{else}}, {{/if}}{{/each}})

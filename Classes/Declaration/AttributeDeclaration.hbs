@@ -1,11 +1,1 @@
-{{ visibility }}
-{{#if static}}
-    static
-{{/if}}
-
-${{ attributeName }}
-
-{{#if defaultValue}}
-    = {{ defaultValue }}
-{{/if}}
-;
+{{ visibility }} {{#if static}} static {{/if}} ${{ name }} {{#if defaultValue}} = {{ defaultValue }} {{/if}};
